@@ -16,7 +16,7 @@ const Home = ({ navigation, route }) => {
   console.log(data, loading);
 
   const fetchData = () => {
-    fetch('http://192.168.1.9:3000/')
+    fetch('http://192.168.1.9:3043/')
       .then((res) => res.json())
       .then((results) => {
         // setData(results)

@@ -42,7 +42,7 @@ const CreateEmployee = ({ navigation, route }) => {
   const [enableshift, setenableShift] = useState(false);
 
   const submitData = () => {
-    fetch('http://192.168.1.9:3000/send-data', {
+    fetch('http://192.168.1.9:3043/send-data', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const CreateEmployee = ({ navigation, route }) => {
   };
 
   const updateDetails = () => {
-    fetch('http://192.168.1.9:3000/update', {
+    fetch('http://192.168.1.9:30/update', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
